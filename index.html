@@ -24,7 +24,19 @@ https://www.megapx.com/contact.htmlよりお問い合わせください。
 
 <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
 <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+<!-- Salesforce Interactions SDK -->
+<script type="text/javascript" src="https://cdn.c360a.salesforce.com/beacon/c360a/b65f7217-f3fc-460c-a8cb-c1dd650845da/scripts/c360a.min.js"></script>
 
+<script type="text/javascript">
+  SalesforceInteractions.init({})
+    .then(function () {
+      console.log("Interactions SDK Initialized");
+    })
+    .catch(function (e) {
+      console.error("Interactions SDK init failed", e);
+    });
+</script>
+	
 </head>
 <body>
 
@@ -271,3 +283,4 @@ if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('i
 
 </body>
 </html>
+
